@@ -6,20 +6,22 @@
 # It will display the name and contact information for a teacher.
 
 # display the full name
-print("Andy Hou")
+name = "Andy Hou"
+print(name)
 
 # display the address
-print("360 No Scope Street")
+address = "360 No Scope Street"
+print(address)
 
 # display the city, state and zip
-print("Dorito City, Dewland, 13337")
+cityStateZip = "Dorito City, Dewland, 13337"
+print(cityStateZip)
 
 # display the phone number
-print("360-720-1337")
+phone = "360-720-1337"
+print(phone)
 
 # display the course area
-print("CIS 121")
-
-
-
+course = "CIS 121"
+print(course)
 
