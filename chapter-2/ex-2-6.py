@@ -29,7 +29,15 @@
 
 # Print detailed information about the sale, formatting all values to two decimal places.
 
+price = input("Input price of purchase: ")
+price = float(price)
 
+stateTax = .06
+stateTax = float(stateTax)
 
+countyTax = .01
+countyTax = float(countyTax)
 
+total = price * (1 + stateTax) * (1 + countyTax)
 
+print("Total price is: $%.2f"%total)

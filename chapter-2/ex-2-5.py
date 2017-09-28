@@ -19,7 +19,15 @@
 
 # Print the results for all calculations.
 
+speed = 40
+speed = float(speed)
 
+distSix = speed * 6
 
+distTen = speed * 10
 
+distFifteen = speed * 15
 
+print("Distance after six hours: %.2f"%distSix, "miles")
+print("Distance after ten hours: %.2f"%distTen, "miles")
+print("Distance after fifteen hours: %.2f"%distFifteen, "miles")

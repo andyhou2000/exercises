@@ -28,7 +28,24 @@
 # Print the values for the subtotal, tax and total.
 # Label each value, and format them to display with two decimal places. 
 
+a = input("First item price: ")
+a = float(a)
 
+b = input("Second item price: ")
+b = float(b)
 
+c = input("Third item price: ")
+c = float(c)
 
+d = input("Fourth item price: ")
+d = float(d)
 
+e = input ("Fifth item price: ")
+e = float(e)
+
+salesTax = 1.0625
+salesTax = float(salesTax)
+
+price = salesTax * a + salesTax * b + salesTax * c + salesTax * d + salesTax * e
+
+print("Total price is: $%.2f"%price)
