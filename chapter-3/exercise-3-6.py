@@ -43,4 +43,50 @@
 
 # print message for the user
 
+month = int(input("Input month: "))
+day = int(input("Input day: "))
+year = int(input("Input year:"))
 
+if month < 1:
+    print("Invalid month.")
+elif month > 12:
+    print("Invalid month.")
+else:
+    if day < 1:
+        print("Invalid day.")
+    elif month == 1 and day > 31:
+        print("Invalid day.")
+    elif month == 3 and day > 31:
+        print("Invalid day.")
+    elif month == 5 and day > 31:
+        print("Invalid day.")
+    elif month == 7 and day > 31:
+        print("Invalid day.")
+    elif month == 8 and day > 31:
+        print("Invalid day.")
+    elif month == 10 and day > 31:
+        print("Invalid day.")
+    elif month == 12 and day > 31:
+        print("Invalid day.")
+    elif month == 4 and day > 30:
+        print("Invalid day.")
+    elif month == 6 and day > 30:
+        print("Invalid day.")
+    elif month == 9 and day > 30:
+        print("Invalid day.")
+    elif month == 11 and day > 30:
+        print("Invalid day.")
+    elif month == 2 and year % 4 ==0 and day > 29:
+        print("Invalid day.")
+    elif month == 2 and year % 4 != 0 and day > 28:
+        print("Invalid day.")
+    else:
+        if year > 99:
+            print("Invalid year.")
+        elif year <1:
+            print("Invalid year.")
+        else:
+            if month * day == year:
+                print("Date is ", format(month,'02d'), "/", format(day,'02d'), "/", format(year,'02d'), ", and today is a magic date")
+            else:
+                print("Date is ", format(month,'02d'), "/", format(day,'02d'), "/", format(year,'02d'), ", and today is not a magic date")

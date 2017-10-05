@@ -36,3 +36,21 @@
 
 # else print "A and B are equal" message.
 
+aL = input("Insert length of rectangle A: ")
+aL = float(aL)
+aW = input("Insert width of rectangle A: ")
+aW = float(aW)
+bL = input("Insert length of rectangle B: ")
+bL = float(bL)
+bW = input("Insert width of rectangle B: ")
+bW = float(bW)
+
+A = aL * aW
+B = bL * bW
+
+if A>B:
+    print("A is greater")
+elif A<B:
+    print("B is greater")
+else:
+    print("A and B are equal")

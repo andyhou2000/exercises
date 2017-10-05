@@ -28,5 +28,32 @@
 # display the name of the day on the screen.
 
 
+    
+day = input("Input the day of the week as an interger: ")
+day = int(day)
 
-
+dayStr = str
+    
+if day == 1:
+    dayStr = "Monday"
+    print(dayStr)
+elif day == 2:
+    dayStr = "Tuesday"
+    print(dayStr)
+elif day == 3:
+    dayStr = "Wednesday"
+    print(dayStr)
+elif day == 4:
+    dayStr = "Thursday"
+    print(dayStr)
+elif day == 5:
+    dayStr = "Friday"
+    print(dayStr)
+elif day == 6:
+    dayStr = "Saturday"
+    print(dayStr)
+elif day == 7:
+    dayStr = "Friday"
+    print(dayStr)
+else:
+    print("Stop being a dumdum.")

@@ -23,6 +23,21 @@
 
 # If weight > maximum or < than minimum display an appropriate message
 
+kg = input("Input amount of kilograms: ")
+kg = float(kg)
+
+MaxN = float(1000.0)
+MinN = float(0.0)
+
+convN = float(9.1)
+
+New = float(kg * convN)
+
+if MinN <= New <= MaxN:
+    print("Weight is in range.")
+else:
+    print("Weight is not in range")
+print(New)
 
 
 
