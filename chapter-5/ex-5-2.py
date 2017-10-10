@@ -44,3 +44,25 @@
 
 # Call the main function to start the program.
 
+stateTaxRate = 0.06
+stateTaxRate = float(stateTaxRate)
+
+countyTaxRate = 0.02
+countyTaxRate = float(countyTaxRate)
+
+def main():
+    purchase = input("Input purchase amount: $")
+    purchase = float(purchase)
+    sale_details(purchase)
+    
+def sale_details(purchase):
+    state_tax_on_purchase = purchase * stateTaxRate
+    county_tax_on_purchase = purchase * countyTaxRate
+    total_tax = state_tax_on_purchase + county_tax_on_purchase
+    sale_total = total_tax + purchase
+    print("State tax: $", format(state_tax_on_purchase,'.2f')
+    #print("County tax: $", format(county_tax_on_purchase,'.2f'))
+    #print("Total tax: $", format(total_tax,'.2f'))
+    #print("Sale total: $", format(sale_total,'.2f'))
+    
+main()

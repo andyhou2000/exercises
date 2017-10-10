@@ -26,11 +26,24 @@
 
     # Define a local float variable for miles
 
-	# use the global conversion constant to compute miles    
-    
+	# use the global conversion constant to compute miles
+
     # print the results, formatting float values to 2 decimal places
 
 
 
 # Call the main function to start the program
 
+milesPerKM = 1.60934
+milesPerKM = float(milesPerKM)
+
+def main():
+    distKM = input("Input distance in kilometers: ")
+    distKM = float(distKM)
+    convertKMtoMI(distKM)
+
+def convertKMtoMI(distKM):
+    distMI = distKM * milesPerKM
+    print("You have traveled ",format(distMI,'.2f'),"miles.")
+
+main()
