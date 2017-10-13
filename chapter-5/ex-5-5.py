@@ -42,4 +42,20 @@
 
 
 # Call the main function to begin the program.
+prop_tax_rate = float(.0144)
+assess_rate = float(.8)
+    
+def main():
+    prop_val = input("Input property value: ")
+    prop_val = float(prop_val)
+    
+    assess_val = prop_val * assess_rate
+    prop_tax = assess_val * prop_tax_rate
+    
+    prop_info(assess_val,prop_tax)
+
+def prop_info(assess_val,prop_tax):
+    print("Assessed value of house: $",format(assess_val,'.2f'))
+    print("Property tax on house: $",format(prop_tax,'.2f'))
+    
 main()

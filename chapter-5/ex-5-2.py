@@ -60,9 +60,9 @@ def sale_details(purchase):
     county_tax_on_purchase = purchase * countyTaxRate
     total_tax = state_tax_on_purchase + county_tax_on_purchase
     sale_total = total_tax + purchase
-    print("State tax: $", format(state_tax_on_purchase,'.2f')
-    #print("County tax: $", format(county_tax_on_purchase,'.2f'))
-    #print("Total tax: $", format(total_tax,'.2f'))
-    #print("Sale total: $", format(sale_total,'.2f'))
+    print("State tax: $", format(state_tax_on_purchase,'.2f'))
+    print("County tax: $", format(county_tax_on_purchase,'.2f'))
+    print("Total tax: $", format(total_tax,'.2f'))
+    print("Sale total: $", format(sale_total,'.2f'))
     
 main()

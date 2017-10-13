@@ -45,3 +45,25 @@
 
 # Call the main function to start the program
 
+def main():
+    cal_per_g_fat = float(9.0)
+    cal_per_g_carb = float(4.0)
+    
+    g_fat = input("Input grams of fat consumed: ")
+    g_fat = float(g_fat)
+    
+    g_carb = input("Input grams of carbs consumed: ")
+    g_carb = float(g_carb)
+    
+    cal_fat = float(cal_per_g_fat * g_fat)
+    cal_carb = float(cal_per_g_carb * g_carb)
+    
+    caldetail(g_fat,g_carb,cal_fat,cal_carb)
+    
+def caldetail(g_fat,g_carb,cal_fat,cal_carb):
+    print("Grams of fat consumed: ", format(g_fat,'.2f'))
+    print("Grams of carbs consumed: ", format(g_carb,'.2f'))
+    print("Cal from fat: ", format(cal_fat,'.2f'))
+    print("Cal from carbs: ", format(cal_carb,'.2f'))
+    
+main()

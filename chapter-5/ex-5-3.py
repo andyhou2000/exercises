@@ -40,3 +40,21 @@
 
 # Call the main function to start the program
 
+min_ins_percent = .8
+min_ins_percent = float(min_ins_percent)
+
+def main():
+    rep_cost = input("Input replacement cost of item: $")
+    rep_cost = float(rep_cost)
+
+    minimum = min_ins_percent * rep_cost
+    
+    display_details(rep_cost,minimum)
+
+def display_details(rep_cost,minimum):
+    print("Replacement cost is $", format(rep_cost,'.2f'))
+    percent_ins = minimum / rep_cost
+    print("Your item is ", format(percent_ins * 100,'.2f'),"% insured")
+    print("Minimum insurance is $",format(minimum,'.2f'))
+
+main()

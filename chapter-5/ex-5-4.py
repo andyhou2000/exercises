@@ -53,3 +53,33 @@
 
 # Call the main function to start the program
 
+def main():
+    loan = input("Input monthly loan payment: $")
+    loan = float(loan)
+    
+    insurance = input("Input monthly insurance payment: $")
+    insurance = float(insurance)
+    
+    gas = input("Input monthly gas spending: $")
+    gas = float(gas)
+    
+    oil = input("Input monthly oil change payment: $")
+    oil = float(oil)
+    
+    tire = input("Input price of monthly tire maintenence: $")
+    tire = float(tire)
+    
+    maint = input("Input price of monthly maintenence on car: $")
+    maint = float(maint)
+    
+    total(loan, insurance, gas, oil, tire, maint)
+
+def total(loan, insurance, gas, oil, tire, maint):
+    monthlytotal = loan + insurance + gas + oil + tire + maint
+    monthlytotal = float(monthlytotal)
+    yearlytotal = monthlytotal * 12
+    yearlytotal = float(yearlytotal)
+    print("Monthly cost of the car: $", format(monthlytotal, '.2f'))
+    print("Yearly cost of the car: $", format(yearlytotal, '.2f'))
+    
+main()
