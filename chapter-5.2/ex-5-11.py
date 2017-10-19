@@ -71,7 +71,24 @@
 
 
 # Call the main function to start the program
+from random import *
 
+def main():
+    x = randint(0, 100)
+    x = int(x)
+    y = randint(0, 100)
+    y = int(y)
+    z = x + y
+    z = int(z)
+    quiz(x,y,z)
 
+def quiz(x,y,z):
+    print(x, "+", y, "= ")
+    answer = input("Type your answer: ")
+    answer = int(answer)
+    if answer == z:
+        print("That's correct!")
+    else:
+        print("That's wrong. The answer is ", z)
 
-
+main()

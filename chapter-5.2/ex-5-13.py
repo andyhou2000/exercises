@@ -40,7 +40,15 @@
 
 # Call the main function to start the program
 
+def main():
+    print("Time       Dist fallen")
+    print("______________________")
+    calculate()
 
+def calculate():
+    t = int(0)
+    for t in range(0,21):
+        print(format(t,'2'), "s       ", format(.5 * t * t * 9.81,'7.2f'), "m")
+        t = t + 1
 
-
-
+main()

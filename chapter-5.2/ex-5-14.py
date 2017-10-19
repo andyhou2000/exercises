@@ -38,6 +38,12 @@
 
 
 # Call the main function to start the program
-main()
 
+def main():
+    mass = float(input("Input mass in kg: "))
+    velocity = float(input("Input velocity in m/s: "))
+    ke = float(.5 * mass * velocity * velocity)
+    print("Kinetic energy =",format(ke,'.2f'),"joules.")
+
+main()
 

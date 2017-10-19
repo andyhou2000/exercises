@@ -45,4 +45,32 @@
 
 # Call the main function to begin the program
 
+from random import *
 
+def main():
+    total = int(0)
+    odd = int(0)
+    even = int(0)
+    count = int(100)
+    
+    for x in range(0,count):
+        y = randint(0,100)
+        yesno = even_function(y)
+        if yesno == "True":
+            total = total + y
+            even = even + 1
+        else:
+            total = total + y
+            odd = odd + 1
+    
+    print("Total:",total)
+    print("Number of odds:",odd)
+    print("Number of evens:",even)
+
+def even_function(y):
+    if y % 2 == 0:
+        return "True"
+    else:
+        return "False"
+
+main()

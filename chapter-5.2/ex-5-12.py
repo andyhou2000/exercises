@@ -35,7 +35,19 @@
 
 # Call the main function to start the program
 
+def main():
+    x = input("Input first number x: ")
+    x = int(x)
+    y = input("Input second number y: ")
+    y = int(y)
+    compare(x,y)
 
+def compare(x,y):
+    if x > y:
+        print("x is greater than y. x =", x)
+    elif y > x:
+        print("y is greater than x. y =", y)
+    else:
+        print("Both numbers are the same. x and y =", x)
 
-
-
+main()

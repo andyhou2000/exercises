@@ -61,5 +61,36 @@
 
 # Call the main function to start the program
 
+def main():
+    a = input("Input first score: ")
+    a = float(a)
+    b = input("Input second score: ")
+    b = float(b)
+    c = input("Input third score: ")
+    c = float(c)
+    d = input("Input fourth score: ")
+    d = float(d)
+    e = input("Input fifth score: ")
+    e = float(e)
+    average(a,b,c,d,e)
+    
+def average(a,b,c,d,e):
+    avg = (a + b + c + d + e) / 5
+    print("Average Store = ",avg,"%")
+    letter(avg)
 
-
+def letter(avg):
+    if avg >= 90:
+        letter = "A"
+    elif avg >= 80 and avg <90:
+        letter = "B"
+    elif avg >= 70 and avg < 80:
+        letter = "C"
+    elif avg >= 60 and avg < 70:
+        letter = "D"
+    else:
+        letter = "F"
+    
+    print("Letter Grade = ",letter)
+    
+main()
