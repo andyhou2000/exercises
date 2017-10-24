@@ -36,4 +36,21 @@
 
 # else display message stating that spending and budget were equal.
 
+budget = input("Input month's budget: ")
+budget = float(budget)
+spent = 0
+spent = float(spent)
+spending = 1
+spending = float(spending)
 
+while spending != 0:
+    spending = input("Enter amount spent: ")
+    spending = float(spending)
+    spent = spent + spending
+budget = budget - spent
+if budget >= 0:
+    print("You did not exceed your budget. You have $", format(budget, '.2f'), "left.")
+    print("You spent a total of $", format(spent, '.2f'))
+else:
+    print("You exceeded your budget. You have $", format(budget, '.2f'), ".")
+    print("You spent a total of $", format(spent, '.2f'))

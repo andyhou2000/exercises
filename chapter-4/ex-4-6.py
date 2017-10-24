@@ -23,8 +23,20 @@
 # 	Calculate the Fahrenheit temperature for the current Celsius value
 
 #	Display the current Celsius and Fahrenheit values, separated by two tabs
+c = 0
+c = float(c)
 
+maxC = 100.0
+maxC = int(maxC)
 
+print("            F        C")
+print("            ____________")
+for c in range(0,maxC):
+    f = input()
+    f = float(f)
+    c = (f - 32) * (5 / 9)
+    print("           ", format(f,'.2f'), "    ",format(c, '.2f'))      
+   
 
 
 

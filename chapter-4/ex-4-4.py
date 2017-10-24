@@ -24,5 +24,22 @@
 
     # Display the current hour and distance traveled, separated by a tab
 
+x = 10
+x = int(x)
 
+distance = 0
+distance = int(distance)
 
+time = 0
+time = int(time)
+
+speed = input("Input miles per hour: ")
+speed = int(speed)
+
+print("                   time     distance")
+print("                   _________________")
+for x in range(0,100):
+    time = input("hours driven: ")
+    time = int(time)
+    distance = speed * time
+    print("                   ",time,"      ",distance)

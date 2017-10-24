@@ -20,3 +20,12 @@
 
 
 # Display the total number of bugs collected for all five days.
+
+x = 0
+y = 0
+for x in range(0,5):
+    tempInt = input("Input bugs collected today: ")
+    tempInt = int(tempInt)
+    y = y + tempInt
+    x = x + 1
+print("Bugs collected: ", y)

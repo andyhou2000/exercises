@@ -34,3 +34,40 @@
 # print the results on the screen, including details for total months, total rainfall,
 #	and average monthly rainfall, formatting any floats to 2 decimal places.
 
+startYear = input("Input starting year: ")
+startYear = int(startYear)
+
+years = input("Input amount of years: ")
+years = int(years)
+
+totalRain = 0
+totalRain = float(totalRain)
+
+yearRain = 0
+yearRain = float(yearRain)
+
+x = 0
+x = int(x)
+
+y = 1
+y = int(y)
+
+for x in range(0,years):
+	currentYear = startYear + x
+	print("Input rainfall data for year",currentYear)
+	for y in range(1,13):
+		print("Input inches of rain in month", y,": ", end="")
+		rain = input()
+		rain = float(rain)
+		yearRain = yearRain + rain
+		y = y + 1
+	averageRain = yearRain / 12.0
+	print("Rain in year ",currentYear,": ",format(yearRain,'.2f')," inches.")
+	print("Average rain per month in year ",currentYear,": ",format(averageRain,'.2f')," inches")
+	totalRain = totalRain + yearRain
+	yearRain = 0
+	x = x + 1
+	y = 1
+averageTotalRain = totalRain / (12.0 * x)
+print("Total rain in period: ",format(totalRain,'.2f')," inches")
+print("Average rain per month in period:",format(averageTotalRain,'.2f')," inches")

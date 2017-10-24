@@ -22,3 +22,19 @@
 
     # display the minutes and calories burned using two tabs between the values
 
+calMin = 20
+calMin = float(calMin)
+time = 0
+time = int(time)
+calBurn = 0
+calBurn = float(calBurn)
+x = 10
+x = int(x)
+print("            Time     Cal")
+print("            ____________")
+for x in range(0,100):
+    time = input(end='')
+    time = int(time)
+    calBurn = time * calMin
+    print("           ", time, "    ",format(calBurn, '.2f'))      
+   
