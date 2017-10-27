@@ -35,4 +35,17 @@
 
 # Call the main function to begin the program
 
-
+def main():
+    f = open("names.txt","r")
+    x = int(0)
+    while x != 5:
+        a = f.readline()
+        print(a)
+        x = x + 1
+        if a == "":
+            x = 5
+        else:
+            pass
+    f.close()
+    
+main()

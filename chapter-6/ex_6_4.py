@@ -33,5 +33,16 @@
 
 
 # Call the main function to start the program.
-main()
 
+def main():
+    line = "dummy"
+    counter = int(0)
+    file = open("names.txt","r")
+    line = file.readline()
+    while line != "":
+        line = file.readline()
+        counter = counter + 1
+    file.close()
+    print(counter)
+
+main()

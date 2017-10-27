@@ -31,4 +31,18 @@
 
 # Call the main function to start the program
 
+def main():
+    file_name = input("Input file name: ")
+    file = open(file_name,"r")
+    line = int(1)
+    
+    a = "dummy"
+    
+    while a != "":
+        a = file.readline()
+        print("Line:",line, end = "")
+        print(", text:",a.rstrip())
+        line = line + 1
+    file.close()
 
+main()

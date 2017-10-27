@@ -33,4 +33,21 @@
 
 # Call the main function to start the program
 
+def main():
+    number = str("dummy")
+    total = float(0)
+    counter = int(0)
+    file = open("numbers.txt","r")
+    while number != "":
+        number = file.readline()
+        if number == "":
+            pass
+        else:
+            number = float(number)
+            total = total + number
+            counter = counter + 1
+    file.close()
+    average = float(total / counter)
+    print("Average : ",average)
 
+main()

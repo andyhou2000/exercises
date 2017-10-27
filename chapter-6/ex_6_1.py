@@ -27,4 +27,10 @@
 
 # Call the main function.
 
+def main():
+    file = open("numbers.txt","r")
+    text = file.read()
+    file.close()
+    print(text)
 
+main()

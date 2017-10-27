@@ -29,4 +29,22 @@
 
 # Call the main function to start the program.
 
+def main():
+    file = open("numbers.txt","r")
+    
+    total = int(0)
+    count = int(0)
+    a = str("bob")
+    while a != "":
+        a = file.readline()
+        if a == "":
+            pass
+        else:
+            a = int(a)
+            total = total + a
+            count = count + 1
+    print("Total: ",total)
+    print("Count: ",count)
+    file.close()
 
+main()
